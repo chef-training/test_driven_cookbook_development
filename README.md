@@ -34,11 +34,11 @@ We will use ChefSpec to test the remaining resources within the two recipes (ins
 
 ### 05 - Testing while Refactoring to Attributes
 
-We will refactor the two recipes so that they use node attributes.
+We will refactor the two recipes so that they use node attributes. We also introduce Pry to show you how you can use it to troubleshoot your recipes.
 
-### 06 - Troubleshooting
+### 06 - Testing while Refactoring for Multiple Platforms
 
-So now that we’ve refactored our cookbook and integrated tests into them now,  we should probably know how to troubleshoot chef runs. We will show the ability to introspect your Chef run using tools like `pry` and `irb` to inspect and dissect our chef run.
+We will refactor the attributes to provide support for multiple platforms. We will define tests that simulate the various platforms in our unit tests.  We will talk about adding a new platform to the integration testing.
 
 ### 07 - Ohai Plugin
 
