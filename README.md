@@ -22,30 +22,30 @@ The learner is asked to refactor the test to meet team standards. They refactor 
 
 > The outcome here is that while integration tests gives you fast feedback, there has to be a better (and faster) way to test for regressions when the code changes.
 
-### 04 - Faster Feedback with Unit Testing
+### 03 - Faster Feedback with Unit Testing
 
 We will now introduce ChefSpec as a way to test even faster. Unit tests are useful to test that regressions do not break your code, especially when there is mutability. They are run in memory, so that means you can test really fast!
 
 We will write unit tests for the apache cookbook's default recipe focusing on the two recipes that were included (install and service).
 
-### 05 - Testing Resources in Recipes
+### 04 - Testing Resources in Recipes
 
 We will use ChefSpec to test the remaining resources within the two recipes (install and service).
 
-### 06 - Testing while Refactoring to Attributes
+### 05 - Testing while Refactoring to Attributes
 
 We will refactor the two recipes so that they use node attributes.
 
-### 07 - Troubleshooting
+### 06 - Troubleshooting
 
 So now that we’ve refactored our cookbook and integrated tests into them now,  we should probably know how to troubleshoot chef runs. We will show the ability to introspect your Chef run using tools like `pry` and `irb` to inspect and dissect our chef run.
 
-### 08 - Ohai Plugin
+### 07 - Ohai Plugin
 
 We will then look at Ohai, the chef-client discovery plugin that runs at the inception of every chef-client run. We will inspect the data ohai discovers, the command line utility, and the ability to create plugins with Ohai to discover custom data. It will be good to refresh everyone's knowledge that Ohai attributes can be used in recipes to provide dynamic data for use in your cookbooks.
 
 > The Ohai content exists within the Chef Intermediate material.
 
-### 09 - Free Form
+### 08 - Free Form
 
 Now that we have a lot of good hands-on knowledge writing tests, we will go ahead and refactor a team cookbook. We will take the approach we learned from Day 1 to write some tests for that cookbook cookbook. We will setup a kanban board, assign tasks, and pair together to start adding tests to your cookbooks.
