@@ -38,14 +38,18 @@ We will refactor the two recipes so that they use node attributes. We also intro
 
 ### 06 - Testing while Refactoring for Multiple Platforms
 
-We will refactor the attributes to provide support for multiple platforms. We will define tests that simulate the various platforms in our unit tests.  We will talk about adding a new platform to the integration testing.
+We will refactor the attributes to provide support for multiple platforms. We will define tests that simulate the various platforms in our unit tests. We will talk about adding a new platform to the integration testing.
 
-### 07 - Ohai Plugin
+### 07 - Implementing a Single Configuration
 
-We will then look at Ohai, the chef-client discovery plugin that runs at the inception of every chef-client run. We will inspect the data ohai discovers, the command line utility, and the ability to create plugins with Ohai to discover custom data. It will be good to refresh everyone's knowledge that Ohai attributes can be used in recipes to provide dynamic data for use in your cookbooks.
+The next requirement is to have the ability to drop in a new site on the port 8080. This is done through a apache configuration file. The learner will first define an integration test that fails. Then the learner will explore the first platform to discover the location of where configuration files are placed. Implement the configuration for the first platform and watch the test pass.
 
-> The Ohai content exists within the Chef Intermediate material.
+Running the tests for all platforms the learner sees second platform fails. Then the learner will explore the second platform to discover the location of where configuration files are placed on that platform. Update the implementation so that the integration tests passes for both platforms.
 
-### 08 - Free Form
+The learner implements unit tests for each of the affected recipes and resources
 
-Now that we have a lot of good hands-on knowledge writing tests, we will go ahead and refactor a team cookbook. We will take the approach we learned from Day 1 to write some tests for that cookbook cookbook. We will setup a kanban board, assign tasks, and pair together to start adding tests to your cookbooks.
+### 08 - Refactoring to a Custom Resource
+
+The current implementation of one configuration file that places a configuration file is prescriptive. Even with node attributes in the implementation the solution only allows for one site to be deployed on one configured port. The learner is walked through generating a custom resource that allows multiple configuration files to be implemented.
+
+The learner writes unit tests that validate the new custom resource.
