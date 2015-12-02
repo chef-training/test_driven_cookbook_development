@@ -1,6 +1,24 @@
-# Testing Existing Cookbooks
+# Test Driven Cookbook Development
 
-This training walks a team through adding tests and refactoring an existing body of cookbooks.
+## Agenda
+
+Test Driven Cookbook Development is a comprehensive instructor-led course exploring Test-driven development (TDD) through explanation, demonstration, practice, and discussion.
+
+Building cookbooks with tests will increase the speed at which you work by giving you consistent feedback throughout the entire cookbook development process.
+
+Participants will learn how to confidently create and extend a cookbook using Foodcritic, Rubocop, ChefSpec, and ServerSpec. At the end of the course, learners will have created a code repository that can reviewed and applied to solve real business problems.
+
+Course Agenda:
+
+* Introduction
+* Integration Testing
+* Using and Configuring Foodcritic
+* Using and Configuring Rubocop
+* Refactoring Cookbooks with Tests
+* Faster Feedback with Unit Testing
+* Testing Resources in Recipes
+* Testing while Refactoring to Attributes
+* Testing while Refactoring to Multiple Platforms
 
 ## Setup & Environment
 
@@ -11,6 +29,8 @@ This content assumes that the learner has the Chef Development Kit installed.
 This content assumes that the learner is able to run Test Kitchen on their workstation.
 
 ## Outline
+
+This is the current proposed outline. This may not be inline with the current agenda or with the slides as this outline will change as new requirements surface.
 
 ### 01 - Building Cookbooks with Tests
 
