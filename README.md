@@ -33,12 +33,13 @@ It’s best that learners have some familiarity and comfort with the following:
 ## Agenda:
 
 * Introduction
-* Integration Testing
+* Why Write Tests? Why is that Hard?
+* Writing a Test First
 * Refactoring Cookbooks with Tests
 * Faster Feedback with Unit Testing
 * Testing Resources in Recipes
-* Testing while Refactoring to Attributes
-* Testing while Refactoring to Multiple Platforms
+* Refactoring to Attributes
+* Refactoring to Multiple Platforms
 
 ## Published Content
 
