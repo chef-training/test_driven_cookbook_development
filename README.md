@@ -1,5 +1,7 @@
 # Test Driven Cookbook Development
 
+This is a repository for developing Test Driven Cookbook Development.
+
 ## Abstract
 
 Test Driven Cookbook Development is a comprehensive instructor-led course exploring Test-driven development (TDD) through explanation, demonstration, practice, and discussion.
@@ -14,6 +16,20 @@ Building cookbooks with tests will increase the speed at which you work by givin
 
 In this webinar the facilitator will explain what is unit testing and integration testing, how they apply to the domain of cookbook development, and demonstrate building cookbooks with a test-driven approach. When we're done, you'll know when to apply these two tools, how to use these tools effectively, and know where to continue to build these skills.
 
+## Learner Requirements
+
+Attendees need a network-enabled laptop with a terminal that supports SSH.
+
+* Windows 7 through [Putty](http://www.putty.org/) or [Cygwin with OpenSSH](https://www.cygwin.com/).
+
+* Mac OS X 10.11
+
+* Ubuntu 14.04
+
+It’s best that learners have some familiarity and comfort with the following:
+
+* Chef Essentials or Chef Fundamentals or equivalent experience.
+
 ## Agenda:
 
 * Introduction
@@ -24,56 +40,70 @@ In this webinar the facilitator will explain what is unit testing and integratio
 * Testing while Refactoring to Attributes
 * Testing while Refactoring to Multiple Platforms
 
-## Setup & Environment
+## Published Content
 
-This content starts with the apache cookbook created in the original [Chef Fundamentals](https://github.com/chef-training/chef-fundamentals-repo).
+Video on how to export the content to various formats: https://drive.google.com/file/d/0B4WmSTt8VtdKZDY5RnhIWVVYZkk/view?usp=sharing
 
-This content assumes that the learner has the Chef Development Kit installed.
+### Participant Guide
 
-This content assumes that the learner is able to run Test Kitchen on their workstation.
+The participant guide is a PDF that contains the notes export from the content slides.
 
-## Outline
+This content can be found here: CONTENT IS CURRENTLY IN DEVELOPMENT
 
-This is the current proposed outline. This may not be inline with the current agenda or with the slides as this outline will change as new requirements surface.
+### Instructor Kit
 
-### 01 - Building Cookbooks with Tests
+* All slides for each module
 
-The learner creates an apache cookbook. They start by writing an integration tests. Watching the test fail. Implementing the recipe. Watching the test pass.
+* Instructor Guide for you to learn from, practice with, and perhaps use as reference while teaching. The instructor guide contains the notes export from the content slides with additional instructor notes and lab setup instructions.
 
-### 02 - Refactoring Cookbooks with Tests
+* Participant Guide
 
-The learner is asked to refactor the test to meet team standards. They refactor the recipe using `include_recipe`. They run their test suite and see that everything passes. We ask them to heckle their code (remove source code). They see that the tests still pass. This is because running `kitchen converge` and `kitchen verify` against an already running instance will not reset the instance so it is already in the previously desired state. We ask them to run `kitchen test`. The test fail.
+This content can be found here: CONTENT IS CURRENTLY IN DEVELOPMENT
 
-> The outcome here is that while integration tests gives you fast feedback, there has to be a better (and faster) way to test for regressions when the code changes.
+### Screencast Videos
 
-### 03 - Faster Feedback with Unit Testing
+This content can be found here: CONTENT IS CURRENTLY IN DEVELOPMENT
 
-We will now introduce ChefSpec as a way to test even faster. Unit tests are useful to test that regressions do not break your code, especially when there is mutability. They are run in memory, so that means you can test really fast!
+## Known Issues
 
-We will write unit tests for the apache cookbook's default recipe focusing on the two recipes that were included (install and service).
+There are no known issues at this time.
 
-### 04 - Testing Resources in Recipes
+## Workstation Setup
 
-We will use ChefSpec to test the remaining resources within the two recipes (install and service).
+These modules focus on getting learners engaged with the content as quickly as possible. A workstation is provided to the learners.
 
-### 05 - Testing while Refactoring to Attributes
+### Amazon Machine Instance
 
-We will refactor the two recipes so that they use node attributes. We also introduce Pry to show you how you can use it to troubleshoot your recipes.
+This workstation is currently being managed as a Amazon Machine Instance (AMI). This AMI is managed by Chef through the Training AWS Account.
 
-### 06 - Testing while Refactoring for Multiple Platforms
+* TDD Cookbook Development - CentOS 6.7 - 1.0.0 (ami-6c6a4706)
 
-We will refactor the attributes to provide support for multiple platforms. We will define tests that simulate the various platforms in our unit tests. We will talk about adding a new platform to the integration testing.
+> The AMI was generated with [Packer](https://github.com/chef-training/chefdk-fundamentals-image) and adheres to the following [policy](https://github.com/chef-training/chefdk-image/blob/master/cookbooks/workstations/recipes/tdd_cookbook_development.rb). It is based on a Marketplace AMI so it cannot be made public. If you would like access to this AMI to deliver training please contact [training@chef.io](mailto:training@chef.io) the request that includes your Amazon Account Id.
 
-### 07 - Implementing a Single Configuration
+### Creating the Workstation
 
-The next requirement is to have the ability to drop in a new site on the port 8080. This is done through a apache configuration file. The learner will first define an integration test that fails. Then the learner will explore the first platform to discover the location of where configuration files are placed. Implement the configuration for the first platform and watch the test pass.
+> An chef recipe that automates the creation of the workstation can be found in the [ChefDK Image](
+https://github.com/chef-training/chefdk-image/blob/master/cookbooks/workstations/recipes/essentials.rb
+) project
 
-Running the tests for all platforms the learner sees second platform fails. Then the learner will explore the second platform to discover the location of where configuration files are placed on that platform. Update the implementation so that the integration tests passes for both platforms.
+* Installation of ChefDK
 
-The learner implements unit tests for each of the affected recipes and resources
+* Create a user named 'chef' with the password 'chef'
 
-### 08 - Refactoring to a Custom Resource
+* Ensure the yum package repository is up-to-date
 
-The current implementation of one configuration file that places a configuration file is prescriptive. Even with node attributes in the implementation the solution only allows for one site to be deployed on one configured port. The learner is walked through generating a custom resource that allows multiple configuration files to be implemented.
+```
+$ yum update -y
+```
 
-The learner writes unit tests that validate the new custom resource.
+* INSTALL various editors and tools that the attendee will install: vim; emacs; nano; tree; and git.
+
+* Install [Docker on CentOS](https://docs.docker.com/engine/installation/centos/)
+
+* Allow Password Authentication
+
+* Disable the iptables service
+
+* Disable SELINUX
+
+* Added an ec2 json hints file (content: `{}`) to `/etc/chef/ohai/hints/ec2.json`
