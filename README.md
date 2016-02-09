@@ -2,7 +2,7 @@
 
 This is a repository for developing Test Driven Cookbook Development.
 
-## Abstract
+## Abstract / Description
 
 Test Driven Cookbook Development is a comprehensive instructor-led course exploring Test-driven development (TDD) through explanation, demonstration, practice, and discussion.
 
@@ -10,7 +10,7 @@ Building cookbooks with tests will increase the speed at which you work by givin
 
 Participants will learn how to confidently create and extend a cookbook using ChefSpec and ServerSpec. At the end of the course, learners will have created a code repository that can reviewed and applied to solve real business problems.
 
-## Webinar Abstract
+## Webinar Description
 
 Building cookbooks with tests will increase the speed at which you work by giving you consistent feedback throughout the entire cookbook development process. The Chef Development Kit (ChefDK) includes tools that allow you perform both unit testing and integration testing.
 
@@ -84,7 +84,7 @@ This workstation is currently being managed as a Amazon Machine Instance (AMI). 
 ### Creating the Workstation
 
 > An chef recipe that automates the creation of the workstation can be found in the [ChefDK Image](
-https://github.com/chef-training/chefdk-image/blob/master/cookbooks/workstations/recipes/essentials.rb
+https://github.com/chef-training/chefdk-image/blob/master/cookbooks/workstations/recipes/tdd_cookbook_development.rb
 ) project
 
 * Installation of ChefDK
