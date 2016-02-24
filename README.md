@@ -18,9 +18,9 @@ In this webinar the facilitator will explain what is unit testing and integratio
 
 ## Learner Requirements
 
-Attendees need a network-enabled laptop with a terminal that supports SSH.
+Participants need a network-enabled laptop with a terminal that supports SSH.
 
-* Windows 7 through [Putty](http://www.putty.org/) or [Cygwin with OpenSSH](https://www.cygwin.com/).
+* Windows 7+ through [Putty](http://www.putty.org/) or [Cygwin with OpenSSH](https://www.cygwin.com/).
 
 * Mac OS X 10.11
 
@@ -30,7 +30,7 @@ It’s best that learners have some familiarity and comfort with the following:
 
 * Chef Essentials or Chef Fundamentals or equivalent experience.
 
-## Agenda:
+## Agenda
 
 * Introduction
 * Why Write Tests? Why is that Hard?
@@ -43,7 +43,7 @@ It’s best that learners have some familiarity and comfort with the following:
 
 ## Published Content
 
-Video on how to export the content to various formats: https://drive.google.com/file/d/0B4WmSTt8VtdKZDY5RnhIWVVYZkk/view?usp=sharing
+The latest published version of these training materials are located as follows:
 
 ### Participant Guide
 
@@ -64,6 +64,10 @@ This content can be found here: CONTENT IS CURRENTLY IN DEVELOPMENT
 ### Screencast Videos
 
 This content can be found here: CONTENT IS CURRENTLY IN DEVELOPMENT
+
+### Publishing Process
+
+Video on how to export the content from slides to guides: https://drive.google.com/file/d/0B4WmSTt8VtdKZDY5RnhIWVVYZkk/view?usp=sharing
 
 ## Known Issues
 
@@ -97,7 +101,7 @@ https://github.com/chef-training/chefdk-image/blob/master/cookbooks/workstations
 $ yum update -y
 ```
 
-* INSTALL various editors and tools that the attendee will install: vim; emacs; nano; tree; and git.
+* INSTALL various editors and tools that the participant will install: vim; emacs; nano; tree; and git.
 
 * Install [Docker on CentOS](https://docs.docker.com/engine/installation/centos/)
 
