@@ -10,11 +10,23 @@ Building cookbooks with tests will increase the speed at which you work by givin
 
 Participants will learn how to confidently create and extend a cookbook using ChefSpec and ServerSpec. At the end of the course, learners will have created a code repository that can reviewed and applied to solve real business problems.
 
-## Webinar Description
+## Demo / Webinar Descriptions
 
-Building cookbooks with tests will increase the speed at which you work by giving you consistent feedback throughout the entire cookbook development process. The Chef Development Kit (ChefDK) includes tools that allow you perform both unit testing and integration testing.
+The webinar versions of this content have been included as way to allow facilitator to deliver a quicker, a one-hour demo of the content.
 
-In this webinar the facilitator will explain what is unit testing and integration testing, how they apply to the domain of cookbook development, and demonstrate building cookbooks with a test-driven approach. When we're done, you'll know when to apply these two tools, how to use these tools effectively, and know where to continue to build these skills.
+### Test Driven Cookbook Development
+
+Build better cookbooks faster by incorporating tests into the cookbook development process. Tests give you reliable feedback and help you catch bugs early. The Chef Development Kit (Chef DK) includes all the tools you need to write both unit and integration tests.
+
+​In this webinar, the facilitator will explain what unit and integration tests are and how they apply to the domain of cookbook development. They'll demonstrate how to build cookbooks by using a test-driven approach. At the end of the session, you'll know when to apply integration tests, how to use the Chef DK tools effectively, and where you can go to improve your skills even more.
+
+### Writing Great Unit Tests with ChefSpec
+
+You're already building better cookbooks by incorporating tests into the development process but you want to move faster. Verifying a minor change takes minutes when you want it to take seconds. How can you achieve that fast feedback?
+
+In this webinar, the facility will focuses on the power of unit tests. She/He/Ze shows where they fit within a test-driven approach to cookbook development and demonstrates how they can speed up that process. Her/His/Zirs tool of choice is ChefSpec. ChefSpec is a unit testing framework that allows you to write RSpec-style tests and its included in the Chef DK. At the end of the session, you'll know how to use ChefSpec to write great unit tests, and where you can go to improve your skills even more.
+
+### Introduction
 
 ## Learner Requirements
 
