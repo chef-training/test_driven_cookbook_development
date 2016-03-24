@@ -2,6 +2,12 @@
 
 This is a repository for developing Test Driven Cookbook Development.
 
+Within this repository you will find:
+
+* Test Driven Cookbook Development Course (8 hours)
+* Demo - Test Driven Cookbook Development (1 hour)
+* Demo - Writing Great Unit Tests with ChefSpec (1 hour)
+
 ## Abstract / Description
 
 Test Driven Cookbook Development is a comprehensive instructor-led course exploring Test-driven development (TDD) through explanation, demonstration, practice, and discussion.
@@ -10,11 +16,17 @@ Building cookbooks with tests will increase the speed at which you work by givin
 
 Participants will learn how to confidently create and extend a cookbook using ChefSpec and ServerSpec. At the end of the course, learners will have created a code repository that can reviewed and applied to solve real business problems.
 
-## Webinar Description
+## Demo - Test Driven Development
 
 Building cookbooks with tests will increase the speed at which you work by giving you consistent feedback throughout the entire cookbook development process. The Chef Development Kit (ChefDK) includes tools that allow you perform both unit testing and integration testing.
 
 In this webinar the facilitator will explain what is unit testing and integration testing, how they apply to the domain of cookbook development, and demonstrate building cookbooks with a test-driven approach. When we're done, you'll know when to apply these two tools, how to use these tools effectively, and know where to continue to build these skills.
+
+## Demo - Writing Great Unit Tests with ChefSpec
+
+You're already building better cookbooks by incorporating tests into the development process but you want to move faster. Verifying a minor change takes minutes when you want it to take seconds. How can you achieve that fast feedback?
+
+In this webinar the facilitor focuses on the power of unit tests. The show where they fit within a test-driven approach to cookbook development and demonstrates how they can speed up that process. Their tool of choice is ChefSpec. ChefSpec is a unit testing framework that allows you to write RSpec-style tests and its included in the Chef DK. At the end of the session, you'll know how to use ChefSpec to write great unit tests, and where you can go to improve your skills even more.
 
 ## Learner Requirements
 
