@@ -61,7 +61,7 @@ The latest published version of these training materials are located as follows:
 
 The participant guide is a PDF that contains the notes export from the content slides.
 
-This content can be found here: https://opscode.box.com/s/njk1vp1969t3ljjdz8kupgudc5clmrju
+This content can be found here: https://opscode.box.com/s/hl60vxbf3wn6236xnr9g19ea7xgsnhom
 
 ### Instructor Kit
 
