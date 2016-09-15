@@ -14,7 +14,7 @@ Test Driven Cookbook Development is a comprehensive instructor-led course explor
 
 Building cookbooks with tests will increase the speed at which you work by giving you consistent feedback throughout the entire cookbook development process.
 
-Participants will learn how to confidently create and extend a cookbook using ChefSpec and ServerSpec. At the end of the course, learners will have created a code repository that can reviewed and applied to solve real business problems.
+Participants will learn how to confidently create and extend a cookbook using ChefSpec and InSpec. At the end of the course, learners will have created a code repository that can reviewed and applied to solve real business problems.
 
 ## Demo - Test Driven Development
 
@@ -26,7 +26,7 @@ In this webinar the facilitator will explain what is unit testing and integratio
 
 You're already building better cookbooks by incorporating tests into the development process but you want to move faster. Verifying a minor change takes minutes when you want it to take seconds. How can you achieve that fast feedback?
 
-In this webinar the facilitor focuses on the power of unit tests. The show where they fit within a test-driven approach to cookbook development and demonstrates how they can speed up that process. Their tool of choice is ChefSpec. ChefSpec is a unit testing framework that allows you to write RSpec-style tests and its included in the Chef DK. At the end of the session, you'll know how to use ChefSpec to write great unit tests, and where you can go to improve your skills even more.
+In this webinar the facilitator focuses on the power of unit tests. The show where they fit within a test-driven approach to cookbook development and demonstrates how they can speed up that process. Their tool of choice is ChefSpec. ChefSpec is a unit testing framework that allows you to write RSpec-style tests and its included in the Chef DK. At the end of the session, you'll know how to use ChefSpec to write great unit tests, and where you can go to improve your skills even more.
 
 ## Learner Requirements
 
